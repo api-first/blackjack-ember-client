@@ -1,0 +1,13 @@
+<div class="casino-user-players">
+  {{link-to "New Player" 'casino.user.players.new'}}
+
+  <ul>
+    {{#each model as |player|}}
+      {{#if player.id}}
+        {{player-li player=player}}
+      {{/if}}
+    {{/each}}
+  </ul>
+
+  {{outlet}}
+</div>

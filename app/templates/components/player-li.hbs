@@ -1,0 +1,8 @@
+{{#if isEditing}}
+  {{focus-input value=player.name enter='update'}}
+  <button {{action 'cancelEdit'}}>cancel</button>
+{{else}}
+  <span {{action 'edit'}}>{{player.name}}</span>
+{{/if}}
+
+<a href="#" {{action 'destroy'}}>X</a>

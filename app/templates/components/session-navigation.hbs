@@ -1,0 +1,8 @@
+{{#if session.isAuthenticated}}
+  Logged in as {{sessionUser.user.username}}
+  <button {{action 'logout'}}>Log out</button>
+{{else}}
+  Logged out
+{{/if}}
+
+{{yield}}

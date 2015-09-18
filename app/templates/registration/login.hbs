@@ -1,0 +1,14 @@
+<h3>Login</h3>
+
+<label>Username</label>{{input value=username}}
+<label>Password</label>{{input value=password type="password" enter="loginUser"}}
+<button {{action 'loginUser'}}>Login</button>
+
+{{#if isError}}
+  <div>
+    There was an error with your credentials.
+  </div>
+{{/if}}
+
+
+{{outlet}}
